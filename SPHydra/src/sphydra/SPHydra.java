@@ -14,13 +14,15 @@ public class SPHydra {
         System.out.println("Dado pressão entrada: "+ Arrays.toString(d.dadosPressaoEntrada(quantD)));
         System.out.println("Dado pressão saída: "+ Arrays.toString(d.dadosPressaoSaida(quantD))); 
         System.out.println("Dado volume água: "+ Arrays.toString(d.dadosVolumeAgua(quantD)));
-        
+        System.out.println("------------------------------------------------------");
         /*for(int i = 0; i < quantD; i++){
             //System.out.println("Dado "+ (i+1) + ": "+ presaoEnt.get(i));
             System.out.println("Dado "+ (i+1) + ": "+ Arrays.toString(d.dadosPressaoEntrada(quantD)));
         }*/
         
-
+        System.out.println("Pressão Entrada: "+ Arrays.toString(d.getPressaoEntrada()));
+        System.out.println("Pressão Saída: "+ Arrays.toString(d.getPressaoSaida()));
+        System.out.println("Volume de Água: "+ Arrays.toString(d.getVolumeAgua()));
 
     }
     

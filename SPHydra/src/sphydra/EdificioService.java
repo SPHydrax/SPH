@@ -27,15 +27,18 @@ public class EdificioService {
     }
     
     
-    public void criarEdificio(){
-        
+    public void criarEdificio(String nome, String endereco){
+        this.setNome(nome);
+        this.setEndereco(endereco);
     }
     
-    public void atualizarEdificio(){
-        
+    public void atualizarEdificio(int edificio_id, String nome, String endereco){
+        this.setEdificio_id(edificio_id);
+        this.setNome(nome);
+        this.setEndereco(endereco);
     }
     
-    public void excluirEdificio(){
+    public void excluirEdificio(int edificio_id){
         
     }
 }
