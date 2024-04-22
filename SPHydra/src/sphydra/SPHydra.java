@@ -1,13 +1,11 @@
-
 package sphydra;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
-import java.util.Random;
 
 public class SPHydra {
-
     public static void main(String[] args) throws InterruptedException {
-        // TODO code application logic here
         DataSimulator d = new DataSimulator();
         int quantD = 1;
         System.out.println("Dados Adquiridos");
@@ -23,7 +21,11 @@ public class SPHydra {
         System.out.println("Pressão Entrada: "+ Arrays.toString(d.getPressaoEntrada()));
         System.out.println("Pressão Saída: "+ Arrays.toString(d.getPressaoSaida()));
         System.out.println("Volume de Água: "+ Arrays.toString(d.getVolumeAgua()));
-
+        System.out.println("------------------------------------------------------");
+        LeituraService l = new LeituraService();
+        l.registrarLeitura(0);
+        /*LocalDateTime hD = LocalDateTime.now();
+        String horaData = hD.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+        System.out.println(horaData);*/
     }
-    
 }
