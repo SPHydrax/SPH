@@ -5,6 +5,8 @@ public class EdificioService {
     private String nome;
     private String endereco;
 
+    //Métodos Especiais
+        //Getters and Setters
     public int getEdificio_id() {
         return edificio_id;
     }
@@ -26,10 +28,17 @@ public class EdificioService {
         this.endereco = endereco;
     }
     
-    
+     //Métodos 
     public void criarEdificio(String nome, String endereco){
         this.setNome(nome);
         this.setEndereco(endereco);
+    }
+    
+    public void criarUsuario(String nome, String email, String senha){
+        AutenticacaoService u = new AutenticacaoService();
+        u.setNome(nome);
+        u.setEmail(email);
+        u.setSenha(senha);
     }
     
     public void atualizarEdificio(int edificio_id, String nome, String endereco){

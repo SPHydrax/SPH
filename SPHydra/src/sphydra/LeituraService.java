@@ -12,6 +12,8 @@ public class LeituraService {
     private double[] pressao_saida_agua;
     private double[] volume_agua;
 
+    //Métodos Especiais
+        //Getters and Setters
     public int getLeitura_id() {
         return leitura_id;
     }
@@ -54,9 +56,7 @@ public class LeituraService {
         this.volume_agua = volume_agua;
     }
 
-  
-    
-    
+     //Métodos 
     public void registrarLeitura(int edificio_id) throws InterruptedException{
         //Data e Hora
         LocalDateTime hD = LocalDateTime.now();

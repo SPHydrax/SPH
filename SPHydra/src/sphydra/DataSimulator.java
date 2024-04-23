@@ -30,14 +30,12 @@ public class DataSimulator {
         this.volumeAgua = volumeAgua;
     }
     
-    
-    
+    //Métodos 
     public double[] dadosPressaoEntrada(int quant) throws InterruptedException{
         double dadosE[] = new double[quant];
         Random r = new Random();
         for(int i=0; i < quant; i++){
             double dado = r.nextDouble(250) * 100;
-            Thread.sleep(quant * 1000);
             dadosE[i] = dado;
         }
         this.setPressaoEntrada(dadosE);
@@ -50,7 +48,6 @@ public class DataSimulator {
         Random r = new Random();
         for (int i = 0; i < quant; i++){
             double dado = r.nextDouble() *100;
-            Thread.sleep(quant * 1000);
             dadosS[i] = dado;
         }
         this.setPressaoSaida(dadosS);
@@ -63,7 +60,6 @@ public class DataSimulator {
         Random r = new Random();
         for (int i = 0; i < quant; i++){
             double dado = r.nextDouble() * 100;
-             Thread.sleep(quant * 1000);
             dadosV[i] = dado;
         }
         this.setVolumeAgua(dadosV);

@@ -6,6 +6,8 @@ public class AutenticacaoService {
     private String email;
     private String senha;
 
+    //Métodos Especiais
+        //Getters and Setters
     public int getUsuario_id() {
         return usuario_id;
     }
@@ -35,7 +37,7 @@ public class AutenticacaoService {
     }
     
     
-    
+     //Métodos 
     public void autenticar(String email, String senha){
         
     }
